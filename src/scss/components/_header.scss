@@ -1,1 +1,67 @@
 // ваш код
+a {
+    color: black;
+}
+ul, li{
+    all: unset;
+}
+
+.container{
+    max-width: 1440px;
+}
+
+.header__logo .logo img {
+    width: 162px;
+    height: 49px; 
+  }
+
+.header__row{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form__container{
+    display: flex;
+    gap: 20px;
+}
+.form_custom{
+    
+    border: none; 
+    background-color: #F1F2F2; 
+    color: #1B1918; 
+    font-size: 14px; 
+    font-family: "Golos Text-Regular", Helvetica;
+    font-weight: 400;
+    padding-left: 24px;
+    border-radius: 5px; 
+    width: 345px; 
+    height: 50px;
+    box-sizing: border-box; 
+}
+.form_custom::placeholder {
+    color: #1B1918; /* Цвет текста плейсхолдера */
+  }
+
+.form_button{
+    width: 200px;
+    height: 50px;
+    background-color: #e91919; /* Красный фон кнопки */
+    color: #fff; /* Белый текст кнопки */
+    border: none; /* Убираем границы */
+    padding: 10px 20px; /* Отступы */
+    font-size: 16px; /* Размер текста */
+    border-radius: 5px; /* Закругленные углы */
+    cursor: pointer; /* Указатель при наведении */
+}
+
+.form_button:hover{
+    background-color: #cb0d0d; /* Более темный красный при наведении */
+}
+
+.header__nav-menu{
+    display: flex;
+    gap: 40px;
+}
+
