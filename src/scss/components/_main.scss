@@ -1,0 +1,92 @@
+.main__banner {
+  padding-top: 50px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.main__banner--img {
+  position: relative;
+}
+
+.main__banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.banner__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+
+.banner__title {
+  font-size: 56px;
+  color: #1b1918;
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 67px;
+}
+
+.banner__subtitle {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1b1918;
+}
+
+.form_custom-banner {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  width: 954px;
+  height: 72px;
+  background: #fefefe;
+  padding-left: 50px;
+}
+
+.form_custom-banner::placeholder {
+  color: #1b1918;
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.input-with-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Выравнивание содержимого справа */
+  position: relative;
+}
+
+.form__container-banner {
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+
+.form_button-banner {
+  margin-left: -211px;
+  width: 200px;
+  height: 50px;
+  background-color: #e91919;
+  color: #f8f8f8;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 500;
+}

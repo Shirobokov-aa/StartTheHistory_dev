@@ -1,1 +1,28 @@
 // ваш код
+
+.footer__line{
+  border: 1px solid #ea1919;
+  // width: 1440px;
+}
+.footer__row{
+  padding-top: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.footer__nav-menu{
+  display: flex;
+  gap: 40px;
+}
+
+.footer__political{
+  font-family: var(--font-family);
+  padding-top: 60px;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ababab;
+}

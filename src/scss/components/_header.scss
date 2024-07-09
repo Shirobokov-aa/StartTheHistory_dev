@@ -1,67 +1,120 @@
 // ваш код
 a {
-    color: black;
+  color: black;
 }
-ul, li{
-    all: unset;
+ul,
+li {
+  all: unset;
 }
 
-.container{
-    max-width: 1440px;
+.container {
+  max-width: 1440px;
 }
 
 .header__logo .logo img {
-    width: 162px;
-    height: 49px; 
-  }
-
-.header__row{
-    padding-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  width: 162px;
+  height: 49px;
 }
 
-.form__container{
-    display: flex;
-    gap: 20px;
+.header__row {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.form_custom{
-    
-    border: none; 
-    background-color: #F1F2F2; 
-    color: #1B1918; 
-    font-size: 14px; 
-    font-family: "Golos Text-Regular", Helvetica;
-    font-weight: 400;
-    padding-left: 24px;
-    border-radius: 5px; 
-    width: 345px; 
-    height: 50px;
-    box-sizing: border-box; 
+
+.form__container {
+  display: flex;
+  gap: 20px;
+}
+.form_custom {
+  outline: none;
+  border: none;
+  background-color: #f1f2f2;
+  color: #1b1918;
+  font-size: 14px;
+  font-family: "Golos Text-Regular", Helvetica;
+  font-weight: 400;
+  padding-left: 24px;
+  border-radius: 5px;
+  width: 345px;
+  height: 50px;
+  box-sizing: border-box;
 }
 .form_custom::placeholder {
-    color: #1B1918; /* Цвет текста плейсхолдера */
+  color: #1b1918;
+}
+
+.form_button {
+  width: 200px;
+  height: 50px;
+  background-color: #e91919;
+  color: #f8f8f8;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 500;
+}
+
+.form_button:hover {
+  background-color: #cb0d0d;
+}
+
+.header__nav-menu {
+  display: flex;
+  gap: 40px;
+}
+
+.link {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1b1918;
+}
+
+.link :hover {
+  color: red;
+}
+
+@media (max-width: 1024px) {
+  .form_custom {
+    width: 275px;
+  }
+  .form_button {
+    width: 175px;
+  }
+  .form__container {
+    gap: 10px;
+  }
+  .header__nav-menu {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__row {
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 
-.form_button{
-    width: 200px;
-    height: 50px;
-    background-color: #e91919; /* Красный фон кнопки */
-    color: #fff; /* Белый текст кнопки */
-    border: none; /* Убираем границы */
-    padding: 10px 20px; /* Отступы */
-    font-size: 16px; /* Размер текста */
-    border-radius: 5px; /* Закругленные углы */
-    cursor: pointer; /* Указатель при наведении */
+  .header__nav {
+    padding-top: 20px;
+    box-sizing: border-box;
+    order: 3;
+  }
+
+  .header__form {
+    order: 2;
+  }
 }
 
-.form_button:hover{
-    background-color: #cb0d0d; /* Более темный красный при наведении */
-}
-
-.header__nav-menu{
-    display: flex;
-    gap: 40px;
-}
-
+// для смартфонов — 320 px, 480 px и выше;
+// для планшетов — 768 px и выше;
+// для нетбуков — 1024 px и выше;
+// для мониторов — 1280 px, 1600 px, 1920 px и выше.
