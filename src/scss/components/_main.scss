@@ -94,6 +94,10 @@
   font-style: normal;
   font-weight: 500;
 }
+
+.form_button-banner:hover {
+  background-color: #cb0d0d;
+}
 .form_button-banner-icon {
   display: none;
 }
@@ -233,4 +237,270 @@
   padding-right: 28px;
   padding-top: 15px;
   box-sizing: border-box;
+}
+
+// _____________________________
+
+.comment__title {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  color: #1b1918;
+  padding-top: 100px;
+}
+
+.comment__block {
+  padding-top: 60px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+}
+
+.comment__block--item {
+  max-width: 1440px;
+  height: 296px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.comment__item--top {
+  display: flex;
+  padding-top: 38px;
+  padding-left: 30px;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.comment__item--top-l {
+  display: flex;
+}
+
+.comment__item--top-r {
+  display: flex;
+}
+
+.comment__item--num {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1b1918;
+}
+
+.comment__item--flag {
+  border: 1px solid #ea1919;
+  border-radius: 5px;
+  padding: 7px 22px 7px 20px;
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ea1919;
+  margin-left: 20px;
+  box-sizing: border-box;
+}
+
+.comment__item--date {
+  margin-right: 20px;
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ababab;
+  box-sizing: border-box;
+}
+
+.comment__item--time {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ababab;
+  padding-right: 37px;
+  box-sizing: border-box;
+}
+
+.comment__item--line-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px 0px 30px;
+  padding-top: 25px;
+  box-sizing: border-box;
+}
+.comment__item--line {
+  flex-grow: 1;
+  border-top: 1px solid #f5f5f5;
+}
+
+.comment__item--bottom {
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+
+.comment__item--name {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ababab;
+  padding-top: 23px;
+}
+
+.comment__item--text {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1b1918;
+}
+
+.comment__item--foot {
+  display: flex;
+  align-items: center;
+}
+
+.commet__item--tag {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ababab;
+}
+
+.commet__item--button-y {
+  border-radius: 5px;
+  height: 40px;
+  background: #f8f8f8;
+
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1b1918;
+  padding: 0 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: none;
+  margin-left: 35px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.commet__item--button-n {
+  border-radius: 5px;
+  height: 40px;
+  background: #f8f8f8;
+
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1b1918;
+  padding: 0 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: none;
+  margin-left: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.img__yes {
+  padding-left: 12px;
+  box-sizing: border-box;
+}
+
+.img__no {
+  padding-left: 12px;
+  box-sizing: border-box;
+}
+
+.comment__control {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+}
+.comment__control--btn {
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  background: #ea1919;
+
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #fefefe;
+  cursor: pointer;
+  border: none;
+  padding: 0 44px;
+}
+
+.comment__control--btn:hover {
+  background-color: #cb0d0d;
+}
+.comment__pagination {
+  display: flex;
+  gap: 40px;
+  margin-left: 275px;
+}
+
+.comment__pagination--activ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: #ababab;
+  width: 56px;
+  height: 56px;
+
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fafdff;
+}
+
+.comment__pagination--default {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2a2a2a;
+}
+
+.comment__pagination--btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  stroke-width: 1px;
+  stroke: #ababab;
+  width: 56px;
+  height: 56px;
+  border: none;
+  cursor: pointer;
 }
