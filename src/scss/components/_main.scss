@@ -239,7 +239,37 @@
   box-sizing: border-box;
 }
 
-// _____________________________
+@media (max-width: 1024px) {
+  .number__item {
+    width: 340px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main__numbers {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .number__row {
+    padding-top: 20px;
+  }
+}
+@media (max-width: 481px) {
+  .main__numbers {
+    flex-wrap: wrap;
+  }
+  .number__row {
+    flex-wrap: wrap;
+    padding-top: 20px;
+    justify-content: center;
+  }
+  .number__item {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+//_____________________________
 
 .comment__title {
   font-family: "Golos Text";
@@ -261,9 +291,10 @@
 
 .comment__block--item {
   max-width: 1440px;
-  height: 296px;
+  padding: 10px 10px;
   border-radius: 10px;
   background: #fff;
+  box-sizing: border-box;
 }
 
 .comment__item--top {
@@ -503,4 +534,150 @@
   height: 56px;
   border: none;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .comment__title {
+    padding-top: 21px;
+    font-family: "Golos Text";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #1b1918;
+  }
+
+  .comment__item--num {
+    font-family: "Golos Text";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ea1919;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .comment__item--top {
+    flex-wrap: wrap;
+  }
+  .comment__item--flag {
+    font-family: "Golos Text";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #ea1919;
+    padding: 7px 10px 7px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .comment__item--name {
+    font-family: "Golos Text";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #ababab;
+  }
+  .comment__item--text {
+    font-family: "Golos Text";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .comment__item--foot {
+    flex-wrap: wrap;
+  }
+  .commet__item--button-y {
+    margin-left: 0;
+    padding: 0 15px;
+    margin-top: 13px;
+  }
+  .comment__control {
+    margin-left: 0;
+  }
+
+  .comment__pagination {
+    display: none;
+  }
+}
+
+//_______________________
+
+.main__blog {
+  padding-top: 100px;
+  box-sizing: border-box;
+
+}
+
+.main__blog--title {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  color: #1b1918;
+
+}
+.blog__container{
+  display: flex;
+  gap: 20px;
+}
+.main__blog--item {
+  padding-top: 60px;
+  box-sizing: border-box;
+  max-width: 467px;
+  overflow: hidden;
+}
+
+.blog__banner{
+  max-width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.blog__banner img{
+  height: 100%;
+  width: 100%;
+}
+.blog__subtitle {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1b1918;
+  padding-top: 36px;
+  box-sizing: border-box;
+}
+
+.blog__desc {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #1b1918;
+  padding-top: 20px;
+  box-sizing: border-box;
+
+}
+
+.blog__item--btn {
+  padding-left: 0;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ea1919;
+  background-color: #fafafa;
+  cursor: pointer;
+  border: none;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+.blog-banner-img{
+  max-width: none !important;
 }
