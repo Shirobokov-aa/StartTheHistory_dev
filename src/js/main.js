@@ -12,8 +12,8 @@ import "./_components.js";
 // //   <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.7/inputmask.min.js"></script>
 
 document.addEventListener("DOMContentLoaded", function () {
-  var burgerButton = document.querySelector(".burger-menu__button");
-  var burgerContent = document.querySelector(".burger-menu__content");
+  let burgerButton = document.querySelector(".burger-menu__button");
+  let burgerContent = document.querySelector(".burger-menu__content");
 
   if (!burgerButton) {
     console.error("Бургер кнопка не найдена");

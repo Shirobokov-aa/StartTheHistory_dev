@@ -98,6 +98,10 @@ li {
 }
 
 @media (max-width: 768px) {
+  .header__logo {
+    order: 0;
+  }
+
   .form__container {
     display: flex;
     flex-direction: column;
@@ -106,17 +110,18 @@ li {
 
   .header__row {
     flex-wrap: wrap;
-    flex-direction: column;
   }
 
   .header__nav {
+    display: none;
     padding-top: 20px;
     box-sizing: border-box;
-    order: 3;
+    // order: 3;
   }
 
   .header__form {
     order: 2;
+    display: none;
   }
 
   .header__nav-menu {
@@ -124,9 +129,65 @@ li {
     flex-direction: column;
     gap: 20px;
   }
+  .search-mob {
+    display: block !important;
+  }
+}
+
+.search-mob {
+  display: none;
 }
 
 // для смартфонов — 320 px, 480 px и выше;
 // для планшетов — 768 px и выше;
 // для нетбуков — 1024 px и выше;
 // для мониторов — 1280 px, 1600 px, 1920 px и выше.
+.burger-menu {
+  position: relative;
+}
+
+.burger-menu__content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Поверх всех элементов */
+}
+
+.burger-menu__content--visible {
+  display: block;
+}
+
+.burger-menu__button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.burger-menu__icon {
+  width: 30px;
+  height: 2px;
+  background-color: black;
+  position: relative;
+}
+
+.burger-menu__icon::before,
+.burger-menu__icon::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: black;
+}
+
+.burger-menu__icon::before {
+  top: -10px;
+}
+
+.burger-menu__icon::after {
+  top: 10px;
+}
