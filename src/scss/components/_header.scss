@@ -99,7 +99,7 @@ li {
 
 @media (max-width: 768px) {
   .header__logo {
-    order: 0;
+    order: 1;
   }
 
   .form__container {
@@ -131,63 +131,166 @@ li {
   }
   .search-mob {
     display: block !important;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+  .header__form-mob {
+    order: 1;
   }
 }
-
 .search-mob {
   display: none;
 }
 
-// для смартфонов — 320 px, 480 px и выше;
-// для планшетов — 768 px и выше;
-// для нетбуков — 1024 px и выше;
-// для мониторов — 1280 px, 1600 px, 1920 px и выше.
-.burger-menu {
-  position: relative;
+// // для смартфонов — 320 px, 480 px и выше;
+// // для планшетов — 768 px и выше;
+// // для нетбуков — 1024 px и выше;
+// // для мониторов — 1280 px, 1600 px, 1920 px и выше.
+
+// @media (min-width: 768px){
+//   .burger-menu {
+//     display: none;
+//   }
+// }
+
+// .burger-menu {
+//   position: relative;
+
+// }
+
+// .burger-menu__content {
+//   display: none;
+//   position: absolute;
+//   top: 100%;
+//   left: 100%;
+//   background-color: white;
+//   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+//   z-index: 1000;
+
+// }
+
+// .burger-menu__content--visible {
+//   display: block;
+// }
+
+// .burger-menu__button {
+//   background: none;
+//   border: none;
+//   cursor: pointer;
+//   display: flex;
+//   align-items: center;
+// }
+
+// .burger-menu__icon {
+//   width: 30px;
+//   height: 2px;
+//   background-color: black;
+//   position: relative;
+// }
+
+// .burger-menu__icon::before,
+// .burger-menu__icon::after {
+//   content: "";
+//   position: absolute;
+//   width: 30px;
+//   height: 2px;
+//   background-color: black;
+// }
+
+// .burger-menu__icon::before {
+//   top: -10px;
+// }
+
+// .burger-menu__icon::after {
+//   top: 10px;
+// }
+
+/* Стили для отображения на экранах с шириной менее 768px */
+/* Стили для экранов с шириной менее 768px */
+@media (max-width: 768px) {
+  .header__nav {
+    display: none;
+  }
+
+  .header__form {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+    position: relative;
+  }
+
+  .burger-menu__content {
+    display: none;
+    position: fixed;
+    top: 100px; /* Высота шапки + отступ между шапкой и меню, при необходимости скорректируйте */
+    border-radius: 15px;
+    left: 3%;
+    width: 94%;
+    height: calc(100% - 100px); /* Высота экрана минус высота шапки */
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .burger-menu__content--visible {
+    display: block;
+  }
+
+  .burger-menu__button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  .burger-menu__icon {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    position: relative;
+  }
+
+  .burger-menu__icon::before,
+  .burger-menu__icon::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: black;
+  }
+
+  .burger-menu__icon::before {
+    top: -10px;
+  }
+
+  .burger-menu__icon::after {
+    top: 10px;
+  }
 }
 
-.burger-menu__content {
-  display: none;
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: white;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  z-index: 1000; /* Поверх всех элементов */
+/* Стили для экранов с шириной более 768px */
+@media (min-width: 768px) {
+  .burger-menu {
+    display: none;
+  }
 }
 
-.burger-menu__content--visible {
-  display: block;
-}
-
-.burger-menu__button {
-  background: none;
-  border: none;
-  cursor: pointer;
+.burger__nav-menu {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #1b1918;
 }
-
-.burger-menu__icon {
-  width: 30px;
-  height: 2px;
-  background-color: black;
-  position: relative;
-}
-
-.burger-menu__icon::before,
-.burger-menu__icon::after {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 2px;
-  background-color: black;
-}
-
-.burger-menu__icon::before {
-  top: -10px;
-}
-
-.burger-menu__icon::after {
-  top: 10px;
+.no-scroll {
+  overflow: hidden;
 }
